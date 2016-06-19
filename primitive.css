@@ -1,0 +1,25 @@
+body {
+    font-family: Arial;
+}
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+.spoiler {
+    border-bottom: 1px dotted #AAA;
+    cursor: pointer;
+}
+.width100 {
+    width: 100%;
+}
+img {
+    height: auto;
+    width: 100%;
+}

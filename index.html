@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Primitive AngularJS framework</title>
+    <link href="primitive.css" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <p>
+            <a href="#">Primitive</a>
+            <a href="#css">CSS</a>
+            <a href="#js">JS</a>
+            <a href="#about">About</a>
+        </p>
+
+        <h2>Components</h2>
+        <h3>Tabs</h3>
+        <fieldset>
+            <legend>Example</legend>
+            <div class="tabs">
+                <div ng-init="tab = 1">
+                    <label class="tab-button">
+                        <input type="radio" name="tab" value="1" ng-model="tab"> Tab 1
+                    </label>
+                    <label class="tab-button">
+                        <input type="radio" name="tab" value="2" ng-model="tab"> Tab 2
+                    </label>
+                    <label class="tab-button">
+                        <input type="radio" name="tab" value="3" ng-model="tab"> Tab 3
+                    </label>
+                </div>
+                <hr>
+                <div ng-show="tab == 1">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ducimus blanditiis soluta psam voluptates consequuntur eveniet non a, minima nihil animi, voluptatum corporis, error uscipit unde! Modi quam quisquam assumenda.
+                </div>
+                <div ng-show="tab == 2">
+                    Consectetur adipisicing elit. Ab ducimus blanditiis soluta ipsam voluptates consequuntur eveniet non a, minima nihil animi, voluptatum corporis, error suscipit unde! Modi quam quisquam assumenda.
+                </div>
+                <div ng-show="tab == 3">
+                    Blanditiis soluta ipsam voluptates consequuntur eveniet non a, minima nihil animi, voluptatum corporis, error suscipit unde! Modi quam quisquam assumenda.
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Code</legend>
+<pre style="background:#fff;color:#3b3b3b"><span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span> <span style="color:#963dff">class</span>=<span style="color:#666">"tabs"</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span> <span style="color:#963dff">ng-init</span>=<span style="color:#666">"tab = 1"</span>></span>
+        <span style="color:#7a7a7a">&lt;<span style="color:#016cff">label</span> <span style="color:#963dff">class</span>=<span style="color:#666">"tab-button"</span>></span>
+            <span style="color:#7a7a7a">&lt;<span style="color:#016cff">input</span> <span style="color:#963dff">type</span>=<span style="color:#666">"radio"</span> <span style="color:#963dff">name</span>=<span style="color:#666">"tab"</span> <span style="color:#963dff">value</span>=<span style="color:#666">"1"</span> <span style="color:#963dff">ng-model</span>=<span style="color:#666">"tab"</span>></span> Tab 1
+        <span style="color:#7a7a7a">&lt;/<span style="color:#016cff">label</span>></span>
+        <span style="color:#7a7a7a">&lt;<span style="color:#016cff">label</span> <span style="color:#963dff">class</span>=<span style="color:#666">"tab-button"</span>></span>
+            <span style="color:#7a7a7a">&lt;<span style="color:#016cff">input</span> <span style="color:#963dff">type</span>=<span style="color:#666">"radio"</span> <span style="color:#963dff">name</span>=<span style="color:#666">"tab"</span> <span style="color:#963dff">value</span>=<span style="color:#666">"2"</span> <span style="color:#963dff">ng-model</span>=<span style="color:#666">"tab"</span>></span> Tab 2
+        <span style="color:#7a7a7a">&lt;/<span style="color:#016cff">label</span>></span>
+        <span style="color:#7a7a7a">&lt;<span style="color:#016cff">label</span> <span style="color:#963dff">class</span>=<span style="color:#666">"tab-button"</span>></span>
+            <span style="color:#7a7a7a">&lt;<span style="color:#016cff">input</span> <span style="color:#963dff">type</span>=<span style="color:#666">"radio"</span> <span style="color:#963dff">name</span>=<span style="color:#666">"tab"</span> <span style="color:#963dff">value</span>=<span style="color:#666">"3"</span> <span style="color:#963dff">ng-model</span>=<span style="color:#666">"tab"</span>></span> Tab 3
+        <span style="color:#7a7a7a">&lt;/<span style="color:#016cff">label</span>></span>
+    <span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">hr</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span> <span style="color:#963dff">ng-show</span>=<span style="color:#666">"tab == 1"</span>></span>
+        Lorem ipsum dolor.
+    <span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span> <span style="color:#963dff">ng-show</span>=<span style="color:#666">"tab == 2"</span>></span>
+        Consectetur adipisicing elit.
+    <span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span> <span style="color:#963dff">ng-show</span>=<span style="color:#666">"tab == 3"</span>></span>
+        Blanditiis soluta ipsam .
+    <span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+</pre>
+        </fieldset>
+        <h3>Spoiler</h3>
+        <fieldset>
+            <legend>Example</legend>
+            <div>
+                <span class="spoiler"
+                    title="Expand"
+                    ng-init="spoiler=false"
+                    ng-click="spoiler=!spoiler">Lorem ipsum dolor sit amet</span><i ng-if="spoiler">, consectetur adipisicing elit. Distinctio sapiente autem, non molestias ut rerum, ullam, accusantium fugit minus earum similique? Aspernatur nostrum architecto, optio quod porro unde modi voluptates!</i>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Code</legend>
+<pre style="background:#fff;color:#3b3b3b"><span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">span</span> <span style="color:#963dff">class</span>=<span style="color:#666">"spoiler"</span>
+        <span style="color:#963dff">title</span>=<span style="color:#666">"Expand"</span>
+        <span style="color:#963dff">ng-init</span>=<span style="color:#666">"spoiler=false"</span>
+        <span style="color:#963dff">ng-click</span>=<span style="color:#666">"spoiler=!spoiler"</span>></span>Lorem ipsum dolor sit amet<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">span</span>></span><span style="color:#7a7a7a">&lt;<span style="color:#016cff">i</span> <span style="color:#963dff">ng-if</span>=<span style="color:#666">"spoiler"</span>></span>, consectetur adipisicing elit.<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">i</span>></span>
+<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+</pre>
+        </fieldset>
+        <h3>Slider {{slider[1]}}{{slider[2]}}{{slider[3]}}</h3>
+        <fieldset>
+            <legend>Example</legend>
+            <div>
+                <div ng-init="slider = 1">
+                    <input type="radio" name="slider" value="1" ng-model="slider">
+                    <input type="radio" name="slider" value="2" ng-model="slider">
+                    <input type="radio" name="slider" value="3" ng-model="slider">
+                </div>
+                <img src="img1.png" ng-show="slider == 1" ng-click="slider = slider + 1">
+                <img src="img2.png" ng-show="slider == 2" ng-click="slider = slider + 1">
+                <img src="img3.png" ng-show="slider == 3" ng-click="slider = 1">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Code</legend>
+<pre style="background:#fff;color:#3b3b3b"><span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">div</span> <span style="color:#963dff">ng-init</span>=<span style="color:#666">"slider = 1"</span>></span>
+        <span style="color:#7a7a7a">&lt;<span style="color:#016cff">input</span> <span style="color:#963dff">type</span>=<span style="color:#666">"radio"</span> <span style="color:#963dff">name</span>=<span style="color:#666">"slider"</span> <span style="color:#963dff">value</span>=<span style="color:#666">"1"</span> <span style="color:#963dff">ng-model</span>=<span style="color:#666">"slider"</span>></span>
+        <span style="color:#7a7a7a">&lt;<span style="color:#016cff">input</span> <span style="color:#963dff">type</span>=<span style="color:#666">"radio"</span> <span style="color:#963dff">name</span>=<span style="color:#666">"slider"</span> <span style="color:#963dff">value</span>=<span style="color:#666">"2"</span> <span style="color:#963dff">ng-model</span>=<span style="color:#666">"slider"</span>></span>
+        <span style="color:#7a7a7a">&lt;<span style="color:#016cff">input</span> <span style="color:#963dff">type</span>=<span style="color:#666">"radio"</span> <span style="color:#963dff">name</span>=<span style="color:#666">"slider"</span> <span style="color:#963dff">value</span>=<span style="color:#666">"3"</span> <span style="color:#963dff">ng-model</span>=<span style="color:#666">"slider"</span>></span>
+    <span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">img</span> <span style="color:#963dff">src</span>=<span style="color:#666">"img1.png"</span> <span style="color:#963dff">ng-show</span>=<span style="color:#666">"slider == 1"</span> <span style="color:#963dff">ng-click</span>=<span style="color:#666">"slider = slider + 1"</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">img</span> <span style="color:#963dff">src</span>=<span style="color:#666">"img2.png"</span> <span style="color:#963dff">ng-show</span>=<span style="color:#666">"slider == 2"</span> <span style="color:#963dff">ng-click</span>=<span style="color:#666">"slider = slider + 1"</span>></span>
+    <span style="color:#7a7a7a">&lt;<span style="color:#016cff">img</span> <span style="color:#963dff">src</span>=<span style="color:#666">"img3.png"</span> <span style="color:#963dff">ng-show</span>=<span style="color:#666">"slider == 3"</span> <span style="color:#963dff">ng-click</span>=<span style="color:#666">"slider = 1"</span>></span>
+<span style="color:#7a7a7a">&lt;/<span style="color:#016cff">div</span>></span>
+</pre>
+        </fieldset>
+        <h3>Glyphicons</h3>
+        <table class="width100">
+            <tbody>
+                <tr>
+                    <td>&bull;<br>&amp;bull</td>
+                    <td>&sect;<br>&amp;sect;</td>
+                    <td>&copy;<br>&amp;copy;</td>
+                    <td>&laquo;<br>&amp;laquo;</td>
+                    <td>&raquo;<br>&amp;raquo;</td>
+                </tr>
+                <tr>
+                    <td>&reg;<br>&amp;reg;</td>
+                    <td>&larr;<br>&amp;larr;</td>
+                    <td>&uarr;<br>&amp;uarr;</td>
+                    <td>&rarr;<br>&amp;rarr;</td>
+                    <td>&darr;<br>&amp;darr;</td>
+                </tr>
+                <tr>
+                    <td>&#9668;<br>&amp;#9668;</td>
+                    <td>&#9650;<br>&amp;#9650;</td>
+                    <td>&#9658;<br>&amp;#9658;</td>
+                    <td>&#9660;<br>&amp;#9660;</td>
+                    <td>&#8596;<br>&amp;#8596;</td>
+                </tr>
+                <tr>
+                    <td>&#8629;<br>&amp;#8629;</td>
+                    <td>&lArr;<br>&amp;lArr;</td>
+                    <td>&uArr;<br>&amp;uArr;</td>
+                    <td>&rArr;<br>&amp;rArr;</td>
+                    <td>&dArr;<br>&amp;dArr;</td>
+                </tr>
+                <tr>
+                    <td>&hArr;<br>&amp;hArr;</td>
+                    <td>&infin;<br>&amp;infin;</td>
+                    <td>&loz;<br>&amp;loz;</td>
+                    <td>&empty;<br>&amp;empty;</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="primitive.js"></script>
+</body>
+</html>
