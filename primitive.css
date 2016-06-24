@@ -5,13 +5,6 @@ body {
     max-width: 960px;
     margin: 0 auto;
 }
-.hide {
-    display: none;
-}
-.show {
-    display: block;
-}
-
 .spoiler {
     border-bottom: 1px dotted #AAA;
     cursor: pointer;
@@ -23,3 +16,20 @@ img {
     height: auto;
     width: 100%;
 }
+.hold{
+    position: relative;
+}
+.hold-content{
+    width: 200px;
+    right: 0px;
+    bottom: 6px;
+    border: 1px solid #AAA;
+    padding: 10px;
+    position: absolute;
+    display: block;
+    background-color: white;
+}
+.r {
+    float: right;
+}
+/*http://markup.su/highlighter/*/
