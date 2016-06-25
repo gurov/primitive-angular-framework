@@ -232,6 +232,30 @@
     &lt;/<span style="color:#bf4f24">div</span>>
 &lt;/<span style="color:#bf4f24">div</span>>
 </pre>
+        <h3>Rating</h3>
+        <h6>Example</h6>
+        <div ng-init="stars = [1,2,3,4,5]">
+            <div ng-init="star1 = 4">
+                <span ng-repeat="a in stars">
+                    <span ng-if="a <= star1">★</span>
+                    <span ng-if="a > star1">☆</span>
+                </span>
+                <button ng-click="star1<5 ? star1=star1+1 : ''">+</button>
+                <button ng-click="star1>0 ? star1=star1-1 : ''">-</button>
+            </div>
+        </div>
+        <h6>Code</h6>
+<pre style="background:#f9f9f9;color:#080808">&lt;<span style="color:#bf4f24">div</span> <span style="color:#bf4f24">ng-init</span>=<span style="color:#0b6125">"stars = [1,2,3,4,5]"</span>>
+    &lt;<span style="color:#bf4f24">div</span> <span style="color:#bf4f24">ng-init</span>=<span style="color:#0b6125">"star1 = 4"</span>>
+        &lt;<span style="color:#bf4f24">span</span> <span style="color:#bf4f24">ng-repeat</span>=<span style="color:#0b6125">"a in stars"</span>>
+            &lt;<span style="color:#bf4f24">span</span> <span style="color:#bf4f24">ng-if</span>=<span style="color:#0b6125">"a &lt;= star1"</span>>★&lt;/<span style="color:#bf4f24">span</span>>
+            &lt;<span style="color:#bf4f24">span</span> <span style="color:#bf4f24">ng-if</span>=<span style="color:#0b6125">"a > star1"</span>>☆&lt;/<span style="color:#bf4f24">span</span>>
+        &lt;/<span style="color:#bf4f24">span</span>>
+        &lt;<span style="color:#bf4f24">button</span> <span style="color:#bf4f24">ng-click</span>=<span style="color:#0b6125">"star1&lt;5 ? star1=star1+1 : ''"</span>>+&lt;/<span style="color:#bf4f24">button</span>>
+        &lt;<span style="color:#bf4f24">button</span> <span style="color:#bf4f24">ng-click</span>=<span style="color:#0b6125">"star1>0 ? star1=star1-1 : ''"</span>>-&lt;/<span style="color:#bf4f24">button</span>>
+    &lt;/<span style="color:#bf4f24">div</span>>
+&lt;/<span style="color:#bf4f24">div</span>>
+</pre>
         <footer>
             <br><br>
             <hr>
