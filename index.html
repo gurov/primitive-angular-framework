@@ -9,7 +9,7 @@
 <body>
     <div class="content">
         <p>
-            <a href="#">Primitive</a>
+            <a href="https://gurov.github.io/primitive-angular-framework/">Primitive</a>
             <a href="#components">Components</a>
             <a href="#js">JS</a>
             <a href="https://github.com/gurov/primitive-angular-framework">GitHub</a>
@@ -208,6 +208,36 @@
     &lt;/<span style="color:#bf4f24">fieldset</span>>
 &lt;/<span style="color:#bf4f24">div</span>>
 </pre>
+        <h3>Progress bar</h3>
+        <h6>Example</h6>
+        <div ng-init="pb = [1,2,3,4,5,6,7,8,9,10]">
+            <div ng-init="pb1 = 7">
+                <button ng-click="pb1<10 ? pb1=pb1+1 : ''">+</button>
+                <button ng-click="pb1>0 ? pb1=pb1-1 : ''">-</button>
+                [<span ng-repeat="a in pb">
+                    <span ng-if="a <= pb1">|</span>
+                    <span ng-if="a > pb1">.</span>
+                </span>] {{pb1}}/10
+            </div>
+        </div>
+        <h6>Code</h6>
+<pre style="background:#f9f9f9;color:#080808">&lt;<span style="color:#bf4f24">div</span> <span style="color:#bf4f24">ng-init</span>=<span style="color:#0b6125">"pb = [1,2,3,4,5,6,7,8,9,10]"</span>>
+    &lt;<span style="color:#bf4f24">div</span> <span style="color:#bf4f24">ng-init</span>=<span style="color:#0b6125">"pb1 = 7"</span>>
+        &lt;<span style="color:#bf4f24">button</span> <span style="color:#bf4f24">ng-click</span>=<span style="color:#0b6125">"pb1&lt;10 ? pb1=pb1+1 : ''"</span>>+&lt;/<span style="color:#bf4f24">button</span>>
+        &lt;<span style="color:#bf4f24">button</span> <span style="color:#bf4f24">ng-click</span>=<span style="color:#0b6125">"pb1>0 ? pb1=pb1-1 : ''"</span>>-&lt;/<span style="color:#bf4f24">button</span>>
+        [&lt;<span style="color:#bf4f24">span</span> <span style="color:#bf4f24">ng-repeat</span>=<span style="color:#0b6125">"a in pb"</span>>
+            &lt;<span style="color:#bf4f24">span</span> <span style="color:#bf4f24">ng-if</span>=<span style="color:#0b6125">"a &lt;= pb1"</span>>|&lt;/<span style="color:#bf4f24">span</span>>
+            &lt;<span style="color:#bf4f24">span</span> <span style="color:#bf4f24">ng-if</span>=<span style="color:#0b6125">"a > pb1"</span>>.&lt;/<span style="color:#bf4f24">span</span>>
+        &lt;/<span style="color:#bf4f24">span</span>>] {{pb1}}/10
+    &lt;/<span style="color:#bf4f24">div</span>>
+&lt;/<span style="color:#bf4f24">div</span>>
+</pre>
+        <footer>
+            <br><br>
+            <hr>
+            <a href="https://gurov.github.io/primitive-angular-framework/">Primitive</a>
+            <a href="https://github.com/gurov/primitive-angular-framework">GitHub</a>
+        </footer>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
