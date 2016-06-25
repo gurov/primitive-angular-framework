@@ -226,6 +226,64 @@
     &lt;/<span style="color:#bf4f24">div</span>>
 &lt;/<span style="color:#bf4f24">div</span>>
 </pre>
+        <h3>Login</h3>
+        <h6>Example</h6>
+        <div>
+            <table class="width100">
+                <tbody>
+                    <tr>
+                        <td>Login</td>
+                        <td><input type="text" ng-model="login"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" ng-model="password"></td>
+                    </tr>
+                    <tr ng-if="msg">
+                        <td></td>
+                        <td>
+                            <i>⚠ Login or passmord is incorrect</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button ng-disabled="!password || !login"
+                                ng-click="login = password = '';msg=true">Sign in</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h6>Code</h6>
+<pre style="background:#f9f9f9;color:#080808">&lt;<span style="color:#bf4f24">div</span>>
+    &lt;<span style="color:#bf4f24">table</span> <span style="color:#bf4f24">class</span>=<span style="color:#0b6125">"width100"</span>>
+        &lt;<span style="color:#bf4f24">tbody</span>>
+            &lt;<span style="color:#bf4f24">tr</span>>
+                &lt;<span style="color:#bf4f24">td</span>>Login&lt;/<span style="color:#bf4f24">td</span>>
+                &lt;<span style="color:#bf4f24">td</span>>&lt;<span style="color:#bf4f24">input</span> <span style="color:#bf4f24">type</span>=<span style="color:#0b6125">"text"</span> <span style="color:#bf4f24">ng-model</span>=<span style="color:#0b6125">"login"</span>>&lt;/<span style="color:#bf4f24">td</span>>
+            &lt;/<span style="color:#bf4f24">tr</span>>
+            &lt;<span style="color:#bf4f24">tr</span>>
+                &lt;<span style="color:#bf4f24">td</span>>Password&lt;/<span style="color:#bf4f24">td</span>>
+                &lt;<span style="color:#bf4f24">td</span>>&lt;<span style="color:#bf4f24">input</span> <span style="color:#bf4f24">type</span>=<span style="color:#0b6125">"password"</span> <span style="color:#bf4f24">ng-model</span>=<span style="color:#0b6125">"password"</span>>&lt;/<span style="color:#bf4f24">td</span>>
+            &lt;/<span style="color:#bf4f24">tr</span>>
+            &lt;<span style="color:#bf4f24">tr</span> <span style="color:#bf4f24">ng-if</span>=<span style="color:#0b6125">"msg"</span>>
+                &lt;<span style="color:#bf4f24">td</span>>&lt;/<span style="color:#bf4f24">td</span>>
+                &lt;<span style="color:#bf4f24">td</span>>
+                    &lt;<span style="color:#bf4f24">i</span>>⚠ Login or passmord is incorrect&lt;/<span style="color:#bf4f24">i</span>>
+                &lt;/<span style="color:#bf4f24">td</span>>
+            &lt;/<span style="color:#bf4f24">tr</span>>
+            &lt;<span style="color:#bf4f24">tr</span>>
+                &lt;<span style="color:#bf4f24">td</span>>&lt;/<span style="color:#bf4f24">td</span>>
+                &lt;<span style="color:#bf4f24">td</span>>
+                    &lt;<span style="color:#bf4f24">button</span> <span style="color:#bf4f24">ng-disabled</span>=<span style="color:#0b6125">"!password || !login"</span>
+                        <span style="color:#bf4f24">ng-click</span>=<span style="color:#0b6125">"login = password = '';msg=true"</span>>Sign in&lt;/<span style="color:#bf4f24">button</span>>
+                &lt;/<span style="color:#bf4f24">td</span>>
+            &lt;/<span style="color:#bf4f24">tr</span>>
+        &lt;/<span style="color:#bf4f24">tbody</span>>
+    &lt;/<span style="color:#bf4f24">table</span>>
+&lt;/<span style="color:#bf4f24">div</span>>
+</pre>
         <footer>
             <br><br>
             <hr>
